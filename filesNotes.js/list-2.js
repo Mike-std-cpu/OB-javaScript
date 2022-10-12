@@ -36,4 +36,58 @@ console.log(arraySlice.slice(0,3));
 const newArray = arraySlice.slice(0,3);
 console.log(newArray);
 
+//ForEach()
+let result = 0;
+let arrayNumbers = [15, 20, 100, 50, 28, 69, 48];
 
+arrayNumbers.forEach(valor =>{result = result + valor; console.log(valor);}) 
+console.log(result);
+
+//busqueda de una valor dentro de una lista
+
+let foundNumber = arrayNumbers.find(numero =>{
+    if(numero == 69){
+        return true;
+    }else{
+        return false;
+    }
+})
+
+console.log(foundNumber);
+
+// Objetos
+
+const friends = [
+    {name: "Cristhian", age: 26},
+    {name: "Tristan",age: 25},
+    {name: "Mario", age: 24},
+    {name: "Miguel", age: 25},
+    {name: "Gerry", age: 29}
+]
+
+const foundTristan = friends.find(person =>{
+    if(person.name === "Tristan"){
+        return true;
+    }
+})
+
+//Otro metodo
+
+const foundCristhian = friends.find(person =>{
+    return person.name == "Cristhian"
+})
+
+const twentyFive = [];
+const otherAge = [];
+const foundAge = friends.forEach(person =>{
+    if (person.age == 25){
+        twentyFive.push(person)
+    }else{
+        otherAge.push(person);
+    }
+})
+console.log(twentyFive);
+console.log(otherAge);
+
+console.log(foundTristan);
+console.log(foundCristhian);
