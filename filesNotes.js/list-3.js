@@ -53,3 +53,67 @@ return acumulado + actual;
 })
 
 console.log(suma);
+
+
+// Sort(): Metodo que modifica el arreglo original
+
+const arrayS = [2, 5, 9, 15, 1, 2, 0, 4];
+const arraySS = [5, 10, 2, 96, 69, 200, 87, 44, 500, 1, 50]
+
+console.log(arrayS);
+
+arrayS.sort((anterior, despues) =>{
+    if(anterior < despues){
+        return 1; //Se retornara un numero postivo cuando el # anteror sea menor al que sigue
+    }else if (anterior > despues){
+        return -1; // Se retornara un numero negativo cuando el # anteriro dea mayor al que sigue
+    }else{
+        return 0;
+    }
+})
+console.log(arrayS);
+
+
+arraySS.sort((a, b) => a - b );
+console.log(arraySS);
+
+/**
+Si se provee compareFunction, los elementos del array son ordenados de acuerdo al valor que retorna dicha función de comparación. 
+Siendo a y b dos elementos comparados, entonces:
+ * Si compareFunction(a, b) es menor que 0 (numero negativo), se sitúa a en un indice menor que b. Es decir, a viene primero.
+ * Si compareFunction(a, b) retorna 0, se deja a y b sin cambios entre ellos, pero ordenados con respecto a todos los elementos diferentes. 
+   Nota: el estandar ECMAscript no garantiza este comportamiento, por esto no todos los navegadores 
+   (p.ej. Mozilla en versiones que datan hasta el 2003) respetan esto.
+ * Si compareFunction(a, b) es mayor que 0 (es decir, 1 o más), se sitúa b en un indice menor que a.
+compareFunction(a, b) siempre debe retornar el mismo valor dado un par especifico de elementos a y b como sus argumentos. 
+   Si se retornan resultados inconsistentes entonces el orden de ordenamiento es indefinido.
+ */
+
+objetos.sort((a, b) => {
+    if(a.age < b.age){
+        return -1;
+    }else if (a.age > b.age){
+        return 1;
+    }else{
+        return 0;
+    }
+})
+
+// objetos.sort((a,b) => a.age - b.age);
+
+
+console.log(objetos);
+
+/**RESUTLAOD EN TERMINAL
+ * [ { name: 'Mario', age: 24 },
+  { name: 'Tristan', age: 25 },
+  { name: 'Miguel', age: 25 },
+  { name: 'Cristhian', age: 26 },
+  { name: 'Gerry', age: 31 } ]
+  ​​​​​at ​​​​​​​​objetos​​​ ​filesNotes.js/list-3.js:102:1
+
+Otra manera mas sencilla de resolverlo podria ser de la siguiente manera:
+
+objetos.sort((a,b) => a.age - b.age);
+
+ */
