@@ -23,5 +23,17 @@ const listaSuelta = [...list1, ...list2];
 console.log(listaSuelta);
 console.log(listaSuelta.length);
 
+//SLICE
+
+const arraySlice = ['Hello',1, 2, 3, true, null, 'bye'];
+
+/**
+ * Debemos tener en cuenta que Slice no modificara al array original, pasa igual que con concat, si se desea conservar los cambios
+ * realizados, se debera de asinar a una nueva arrelo o variable.
+ * Se debe de declarar de la siguiente manera: array.slice('PosicionComienzo' , 'PosicionFinal')
+ */
+console.log(arraySlice.slice(0,3));
+const newArray = arraySlice.slice(0,3);
+console.log(newArray);
 
 
