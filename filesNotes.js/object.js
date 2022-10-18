@@ -35,3 +35,28 @@ const movies = [
 //Ordenadas de primer estreno al ultimo
 movies.sort((a, b) =>{ a.date.getFullYear - b.date.getFullYear});
 console.log(movies);
+
+// Date
+
+/**
+ * Las fechas debemos tenerlas en cuenta en todo momento, ya que nos ayudan a deterinar la fecha actual.
+ * o cualquier fecha que nosotros quermos. Un dato importante es que las fechas se miden en miliseguundos
+ * es por eso que al comparar fechas a secas nos saldra que es falso
+ */
+
+const date1 = new Date(2015,9,9);
+console.log(date1);
+const date2 = new Date(2015,9,9);
+console.log(date2);
+console.log(date1 === date2);
+
+/**
+ * Para poder comparar dates, es necesario com´pararlos en su forma base, en milisegundos, esto es posible con,
+ * el metodo getTime(). De esta manera sera mas facil comparar fechas
+ */
+
+console.log(date1.getTime === date2.getTime);
+
+const date3 = new Date();
+const meDate = date3.toLocaleDateString('es-MX');
+console.log(meDate);
