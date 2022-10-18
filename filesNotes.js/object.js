@@ -25,3 +25,13 @@ console.log(obj.lenguage);
 const obj2 = obj;
 obj2.name = "Jose"
 console.log(obj.name);
+
+const movies = [
+    {name: 'Back to the Future', director: 'Robert Zemeckis', date: new Date("Jul 03 1985")},
+    {name: 'Harry Potter the half-blood prince', director: 'David Yates', date: new Date("Jul 07 2009")},
+    {name: 'John Wick', director: 'Chad Tahelski', date: new Date("Oct 24 2014")}
+]
+
+//Ordenadas de primer estreno al ultimo
+movies.sort((a, b) =>{ a.date.getFullYear - b.date.getFullYear});
+console.log(movies);
