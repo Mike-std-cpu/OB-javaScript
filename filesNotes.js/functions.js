@@ -8,6 +8,8 @@ function saludar (name){
     console.log(`Hello ${name}, how are u? :)`);
 }
 
+// Funcion flecha; Las funciones flecha se deben usar mediante se declaran todas las lineas de codigo, ya que si se declara desuies de que,
+// manda a llamar, mandara error.
 const bye = (nickname) =>{console.log(`Good bye ${nickname}, ¡see you around!`);}
 
 saludar("Miguel");
@@ -38,3 +40,10 @@ function propagacion(...cadena){
 }
 
 propagacion(1, 2, 3, 4, 5);
+
+//Funciones anonimas
+
+const array = [1, 2, 3, 4, 5];
+
+const array2 = array.map((valor) => valor * 2); // Ya QUE LA FUNCION INTERNA NO TIENE NOMBRE
+console.log(array2);
