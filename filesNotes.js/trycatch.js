@@ -20,4 +20,14 @@ try {
     console.log(`Ejecutando de manera correcta`);
 } catch(e){
     console.log(`¡Fatal! No se eejecuto correctamente.`);
+    console.log(`"e" tiene como contenido lo siguiente: ${e}`);
 }finally{ console.log(`Siempre me ejecuto, haya error o no`);}
+
+/** Existen tipos de errores ya predeterminados por el lenguaje
+ * 
+ * INTERNAL ERROR
+ * SYNTAX ERROR
+ * TYPE ERROR
+ * RANGE ERROR
+ * REFERENCE ERROR
+ */
