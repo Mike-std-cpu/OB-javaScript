@@ -4,7 +4,7 @@
   "description": "Primer proyecton node.js",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Mike-std-cpu/OB-javaScript/issues"
   },
-  "homepage": "https://github.com/Mike-std-cpu/OB-javaScript#readme"
+  "homepage": "https://github.com/Mike-std-cpu/OB-javaScript#readme",
+  "dependencies": {
+    "winston": "^3.8.2"
+  }
 }
