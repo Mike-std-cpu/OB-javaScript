@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Practica del modulo 10 de modulos en JS con CommonJS y nodejs",
   "main": "controller.js",
+  "type": "module",
   "scripts": {
+    "start": "node controller.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Miguel Andrade",
