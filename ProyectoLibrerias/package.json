@@ -1,0 +1,13 @@
+{
+  "name": "proyectolibrerias",
+  "version": "1.0.0",
+  "description": "Proyecto con uso de modulos con JS y node",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miguel Andrade",
+  "license": "ISC"
+}
