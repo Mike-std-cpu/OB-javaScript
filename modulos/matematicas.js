@@ -21,3 +21,9 @@ module.exports = {
     multipl,
     division
 }
+
+/**
+ * Esta es la manera de importar los datos con Common JS, mas imformacion en el sigiente link:
+ * https://lenguajejs.com/automatizadores/introduccion/commonjs-vs-es-modules/
+ * o en el blog de notsas personal
+ */
