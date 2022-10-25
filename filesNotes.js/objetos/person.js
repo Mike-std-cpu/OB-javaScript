@@ -19,12 +19,12 @@ class Person{
         return this._age;
     }
 
-    set nombre(name){
-        this._name = name;
+    set newNombre(nname){
+        this._name = nname;
     }
 
-    set edad(age){
-        this._age = age;
+    set newEdad(aage){
+        this._age = aage;
     }
 }
 
@@ -50,3 +50,6 @@ console.log(nom);
 
 // Setters: Son metodos que nos sirven en cambiar los valores de los atributos/metodos de las clases.
 console.log(`Propiedades cambiados con setters 🙂`);
+console.log(`La vieja edad de ${mike.nombre} es ${edadd}`);
+mike.newEdad = 26;
+console.log(`La nueva edad de ${mike.nombre} es: ${mike.edad}`);
