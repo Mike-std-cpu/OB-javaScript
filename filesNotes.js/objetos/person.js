@@ -1,10 +1,11 @@
 class Person{
     // # = Private | Solo de pueden acceder dentro de la clase
     // _ = Protected | Solo se puede acceder dentro de la clase y desde clases decendientes
-    constructor(name, age, isDeveloper){
+    _name
+    _age
+    constructor(name, age,){
         this._name = name;
         this._age = age;
-        this._isDeveloper = isDeveloper;
     }
 
     saludo() {
@@ -28,12 +29,30 @@ class Person{
     }
 }
 
+//Herencia
+class Developer extends Person{
+    _lenguage
+    constructor(name, age, lenguage){
+        super(name, age); //SUPER es una palabra reservada para ls llamada el cosntructo de la clase padre
+        this._lenguage = lenguage;
+    }
+
+    get lenguaje(){
+        return this._lenguage;
+    }
+
+    set newLenguage(lenguajeDev){
+        this._lenguage = lenguajeDev;
+    }
+}
+
+
 // Se instancio la clase person con nuevas objetos
-const mike = new Person("Mike",25,true);
+const mike = new Person("Mike",25);
 console.log(mike);
 mike.saludo();
 // Otra instancia
-const sara = new Person("Sarai", 24, false);
+const sara = new Person("Sarai", 24);
 console.log(sara);
 sara.saludo();
 
@@ -53,3 +72,11 @@ console.log(`Propiedades cambiados con setters 🙂`);
 console.log(`La vieja edad de ${mike.nombre} es ${edadd}`);
 mike.newEdad = 26;
 console.log(`La nueva edad de ${mike.nombre} es: ${mike.edad}`);
+
+// INstanciasion de objeto de la clase developer
+const dev1 = new Developer("Miguel", 25, "JavaScript");
+console.log(dev1);
+
+console.log(dev1.lenguaje);
+dev1.newLenguage = "Python";
+console.log(dev1);
