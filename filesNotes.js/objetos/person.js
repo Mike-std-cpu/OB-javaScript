@@ -1,4 +1,6 @@
 class Person{
+    // # = Private | Solo de pueden acceder dentro de la clase
+    // _ = Protected | Solo se puede acceder dentro de la clase y desde clases decendientes
     constructor(name, age, isDeveloper){
         this.name = name;
         this.age = age;
