@@ -25,4 +25,5 @@ class Student {
     }
 }
 
-
+const studen1 = new Student("Miguel",['HTML','CSS','Javascript']);
+console.log(studen1.obtenerDatos());
